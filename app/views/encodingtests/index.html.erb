@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Encodingtests</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @encodingtests.each do |encodingtest| %>
+      <tr>
+        <td><%= link_to 'Show', encodingtest_path(encodingtest) %></td>
+        <td><%= link_to 'Edit', edit_encodingtest_path(encodingtest) %></td>
+        <td><%= link_to 'Destroy', encodingtest, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Encodingtest', new_encodingtest_path %>

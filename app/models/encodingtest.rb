@@ -1,0 +1,2 @@
+class Encodingtest < ApplicationRecord
+end
